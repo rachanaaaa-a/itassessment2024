@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 8</title>
+</head>
+<body>
+    <h1>Join Array Elements into a String</h1>
+    <!--listing color names-->
+	<p>Sample array: myColor = ["Red", "Green", "White", "Black"]</p>
+    <!--seperation with commas or plus-->
+	<button onclick="joinWithComma()">Join with Comma</button>
+	<button onclick="joinWithPlus()">Join with Plus</button>
+
+	<p id="result"></p>
+
+	<script>
+		let myColor = ["Red", "Green", "White", "Black"];
+        //for commas
+		function joinWithComma() {
+			let result = myColor.join(",");
+			document.getElementById("result").innerHTML = result;
+		}
+        //for plus
+		function joinWithPlus() {
+			let result = myColor.join("+");
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+</body>
+</html>

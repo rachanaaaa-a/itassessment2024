@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us -CLOSETSAVVY</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Additional inline styling can be placed here if needed */
+        /* For demonstration purposes only; it's recommended to use an external CSS file */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px; 
+            display: inline-block; 
+        }
+
+        nav ul li a:hover {
+            background-color: pink; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .thank-you {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .map-container {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="shop.html">Shop</a></li> 
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="thank_you_page.html" method="post" target="_blank">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <div id="thankYouMessage" class="thank-you" style="display: none;">
+                <p>Thank you for your message! We'll get back to you shortly.</p>
+                <a href="contact.html">Click here to go back</a>
+            </div>
+        </section>
+    </div>
+
+    
+    <script>
+        // Function to handle form submission
+        function submitForm() {
+            var contactForm = document.getElementById("contactForm");
+            var thankYouMessage = document.getElementById("thankYouMessage");
+            
+            contactForm.style.display = "none";
+            
+            thankYouMessage.style.display = "block";
+        }
+    </script>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>CLOSETSAVVY</p>
+        <p>Pulchowk, Lalitpur</p>
+    
+        <p>Phone: 9867898994</p>
+        <div class="map-container">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.650075516252!2d85.31707660000001!3d27.67711659999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19eb1dad6439%3A0xbb1689fdcee3740b!2sLabim%20Mall!5e0!3m2!1sen!2snp!4v1712769853025!5m2!1sen!2snp" width="150" height="150" style="border:5;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="social-icons">
+            
+                <a href="#"><img src="instagram.jpeg" alt="Instagram" style="width: 30px;"></a>
+                <a href="#"><img src="facebook.jpeg" alt="Facebook" style="width: 20px;"></a>
+                
+            </div>
+            
+        </div>
+        <footer>
+           
+            <p>&copy; 2024 CLOSETSAVVY. All rights reserved.</p>
+        </footer>
+    
+</body>
+</html>

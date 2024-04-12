@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        // Define the table data a
+        var tableData = [
+            { SN: "1", Name: "Name1", Image: "1.jpg" },
+            { SN: "2", Name: "Name2", Image: "2.jpg" },
+            { SN: "3", Name: "Name3", Image: "3.jpg" },
+            { SN: "4", Name: "Name4", Image: "4.jpg" }
+        ];
+
+        // Define the table header
+        var tableHeader = ["S.N.", "Name", "Image"];
+
+        // Defining table style
+        var tableStyle = "border: 5px solid white ; border-collapse: collapse; font-family: Arial; font-size: 50px;";
+        var headerStyle = "border: 5px solid white ; background-color: #85b6ee; color: #333; font-weight: bold; padding: 5px;";
+        var dataStyle1 = "border: 5px solid white ; background-color: #f9f9f9; color: #333; padding: 5px;";
+        var dataStyle2 = "border: 5px solid white ; background-color: #e5e5e5; color: #333; padding: 5px;";
+
+        // Building the table 
+        var tableHTML = "<table style='" + tableStyle + "'>";
+        tableHTML += "<tr>";
+        for (var i = 0; i < tableHeader.length; i++) {
+            tableHTML += "<th style='" + headerStyle + "'>" + tableHeader[i] + "</th>";
+        }
+        tableHTML += "</tr>";
+        for (var i = 0; i < tableData.length; i++) {
+            var rowStyle = i % 2 == 0 ? dataStyle1 : dataStyle2;
+            tableHTML += "<tr style='" + rowStyle + "'>";
+            tableHTML += "<td>" + tableData[i].SN + "</td>";
+            tableHTML += "<td>" + tableData[i].Name + "</td>";
+            tableHTML += "<td>" + tableData[i].Image + "</td>";
+            tableHTML += "</tr>";
+        }
+        tableHTML += "</table>";
+
+        // Display the table in the HTML document
+        document.write(tableHTML);
+    </script>
+</body>
+</html>

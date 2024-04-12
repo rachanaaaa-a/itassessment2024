@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - CLOSETSAVVY</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px; 
+            display: inline-block; 
+        }
+
+        nav ul li a:hover {
+            background-color: pink; 
+            border-radius: 5px; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery-section {
+            margin-bottom: 40px;
+        }
+
+        .gallery-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .testimonial img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="shop.html">Shop</a></li> 
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="gallery-section">
+            <h2>Product Showcase</h2>
+            <div class="gallery-images">
+                
+                <img src="photo4.jpg" alt="photo1">
+                <img src="photo5.jpg" alt="Photo2">
+                <img src="photo6.jpg" alt="Photo3">
+                <img src="photo7.jpg" alt="Photo4">
+                
+            </div>
+        </section>
+
+        
+        <section class="gallery-section">
+            <h2>Featured Collections</h2>
+            <div class="gallery-images">
+              
+                <img src="photo1.jpg" alt="Collection 1">
+                <img src="photo2.jpg" alt="Collection 2">
+                <img src="photo3.jpg" alt="Collection 3">
+                
+            </div>
+        </section>
+
+       
+        <section class="testimonial-section">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <img src="customer1.jpg" alt="Customer 1">
+                <p>"I love my new clothes from Your Clothing Store! Great quality and fast shipping."</p>
+                <p>- Lana</p>
+            </div>
+            <div class="testimonial">
+                <img src="customer2.jpg" alt="Customer 2">
+                <p>"The best place to shop for trendy clothes! I'm a satisfied customer."</p>
+                <p>- Catherine</p>
+            </div>
+        </section>
+
+        
+        <section class="gallery-section">
+            <h2>Behind the Scenes</h2>
+            <div class="gallery-images">
+                
+                <img src="behindthescene1.jpg" alt="Behind the Scenes 1">
+                <img src="behindthescene2.jpg" alt="Behind the Scenes 2">
+                <img src="behindthescene3.jpg" alt="Behind the Scenes 3">
+                
+            </div>
+        </section>
+    </div>
+
+    <footer>
+       
+        <p>&copy; 2024 CLOSETSAVVY. All rights reserved.</p>
+    </footer>
+</body>
+</html>

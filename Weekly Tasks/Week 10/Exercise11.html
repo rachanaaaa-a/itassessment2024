@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 11</title>
+</head>
+<body>
+    <h1>Array Operations</h1>
+    <!--Input variable-->
+    <input type="text" id="text1">
+    <!--add item-->
+    <input type="button" id="button1" value="Add" onclick="add_item_to_array()">
+    <!--display item-->
+    <input type="button" id="button2" value="Display" onclick="display_array()">
+    <div id="Result"></div>
+
+    <script>
+        var array = []; 
+        var x = 0; 
+        //function to add item
+        function add_item_to_array() {
+            array[x] = document.getElementById("text1").value;
+            alert("Element: " + array[x] + " Added at index " + x);
+            x++;
+            document.getElementById("text1").value = "";
+        }
+        //display items
+        function display_array() {
+            var e = "<hr/>";
+            for (var y = 0; y < array.length; y++) {
+                e += "Element " + y + " = " + array[y] + "<br/>";
+            }
+            document.getElementById("Result").innerHTML = e;
+        }
+    </script>
+</body>
+</html>

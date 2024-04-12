@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 9</title>
+</head>
+<body>
+        <h1>Calculate Sum and Product of Integers</h1>
+        <!--Get input  from the user-->
+        <label for="numbers">Enter integers (separated by commas):</label>
+        <input type="text" id="numbers">
+        <!--calculation button-->
+        <button onclick="calculate()">Calculate</button>
+    
+        <p id="result"></p>
+    
+        <script>
+            function calculate() {
+                let input = document.getElementById("numbers").value;
+                let numbers = input.split(",").map(x => parseInt(x.trim()));
+    
+                let sum = 0;
+                let product = 1;
+                //sum and product calculation
+                for (let i = 0; i < numbers.length; i++) {
+                  sum += numbers[i];
+                  product *= numbers[i];
+                }
+                //display result
+                document.getElementById("result").innerHTML = "The sum of the numbers is: " + sum + "<br>The product of the numbers is: " + product;
+            }
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>

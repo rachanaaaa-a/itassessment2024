@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-CLOSETSAVVY</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:black;
+            color:white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px; /* Added padding to make the hover effect more noticeable */
+            display: inline-block;
+        }
+        ul li a:hover {
+    background-color: pink;
+    border-radius: 5px; 
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .product-item {
+            width: calc(25% - 10px); 
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-item p {
+            color: #777;
+        }
+
+        .product-item button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="shop">
+        <div class="container">
+            <!-- Products -->
+            <div class="product">
+                <div class="product-item">
+                    <img src="womenproduct1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>RS2999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>RS2499</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Rs1999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct4.jpg" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>Rs2199</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct5.jpg" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p>Rs2199</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct6.jpg" alt="Product 6">
+                    <h3>Product 6</h3>
+                    <p>RS2199</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct7.jpg" alt="Product 7">
+                    <h3>Product 7</h3>
+                    <p>RS999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct8.jpg" alt="Product 8">
+                    <h3>Product 8</h3>
+                    <p>$999</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct9.jpg" alt="Product 9">
+                    <h3>Product 9</h3>
+                    <p>Rs1599</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="womenproduct10.jpg" alt="Product 10">
+                    <h3>Product 10</h3>
+                    <p>RS1299</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer -->
+        <p>&copy; CLOSETSAVVY. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

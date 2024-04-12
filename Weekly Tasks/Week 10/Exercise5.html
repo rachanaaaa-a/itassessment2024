@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 5</title>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div id="imageContainer"></div>
+
+    <script>
+        // Access the image container
+        var imageContainer = document.getElementById("imageContainer");
+        // Define the number of images 
+        var numberOfImages = 4;
+        // Looping and display the image
+        for (var i = 1; i <= numberOfImages; i++) {
+            // Creating image element
+            var img = document.createElement("img");
+            // Seting image source
+            img.src = " Image" + i + ".jpg";
+            // Append the image to the container
+            imageContainer.appendChild(img);
+            }
+    </script>
+</body>
+</html>

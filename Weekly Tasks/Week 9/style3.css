@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(230, 237, 214);
+}
+.head {
+    width: 100%;
+    height: 84px;
+}
+.header {
+    background-color: rgb(197, 214, 166);
+    float: right;
+}
+.img1 {
+    float: left;
+}
+.section {
+    background-color: rgb(203, 191, 191);
+    overflow: hidden; /* Clear floats */
+}
+.leftColumn {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.rightColumn {
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+fieldset {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+article {
+    margin-bottom: 20px;
+}
+article img {
+    float: left; /* Make the image float left */
+    margin-right: 10px; /* Add some space between the image and text */
+}
+article p {
+    text-align: justify;
+    text-align-last: right; /* Align text to the right */
+}
+.footer {
+    background-color: #f5e3bf;
+    text-align: center;
+}
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+}
+.article {
+    width: 30%;
+}
